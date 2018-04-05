@@ -101,6 +101,8 @@ sudo su - stack -c 'cd /home/stack/devstack;git checkout stable/pike'
 echo '' | sudo tee /etc/sysconfig/iptables
 sudo systemctl restart iptables
 sudo su - stack -c 'cat << EOL > /home/stack/devstack/local.conf
+[[local|localrc]]
+
 ADMIN_PASSWORD=pass
 DATABASE_PASSWORD=pass
 RABBIT_PASSWORD=pass
