@@ -84,7 +84,7 @@ subscription-manager repos --enable rhel-7-server-rpms --enable rhel-7-server-op
 
 mount /dev/sr0 /media
 yum -y upgrade
-yum -y install git vim xterm redhat-lsb-core
+yum -y install git vim xterm redhat-lsb-core deltarpm
 rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 adduser stack
 echo stack | passwd stack --stdin
